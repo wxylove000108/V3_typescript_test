@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@icon-park/vue-next': ^1.4.2
   '@types/node': ^18.6.3
   '@vitejs/plugin-vue': ^3.0.0
   axios: ^0.27.2
@@ -9,6 +10,7 @@ specifiers:
   typescript: ^4.6.4
   unocss: ^0.45.1
   unplugin-auto-import: ^0.10.3
+  unplugin-vue-define-options: ^0.7.1
   vite: ^3.0.0
   vue: ^3.2.37
   vue-router: ^4.0.13
@@ -21,12 +23,14 @@ dependencies:
   vue-router: 4.0.13_vue@3.2.37
 
 devDependencies:
+  '@icon-park/vue-next': 1.4.2_vue@3.2.37
   '@types/node': 18.6.3
   '@vitejs/plugin-vue': 3.0.1_vite@3.0.4+vue@3.2.37
   prettier: 2.7.1
   typescript: 4.7.4
   unocss: 0.45.1_vite@3.0.4
   unplugin-auto-import: 0.10.3_vite@3.0.4
+  unplugin-vue-define-options: 0.7.1_vite@3.0.4+vue@3.2.37
   vite: 3.0.4
   vue-tsc: 0.38.9_typescript@4.7.4
 
@@ -68,6 +72,15 @@ packages:
     dependencies:
       '@babel/helper-validator-identifier': 7.18.6
       to-fast-properties: 2.0.0
+
+  /@icon-park/vue-next/1.4.2_vue@3.2.37:
+    resolution: {integrity: sha512-+QklF255wkfBOabY+xw6FAI0Bwln/RhdwCunNy/9sKdKuChtaU67QZqU67KGAvZUTeeBgsL+yaHHxqfQeGZXEQ==}
+    engines: {node: '>= 8.0.0', npm: '>= 5.0.0'}
+    peerDependencies:
+      vue: 3.x
+    dependencies:
+      vue: 3.2.37
+    dev: true
 
   /@iconify/types/1.1.0:
     resolution: {integrity: sha512-Jh0llaK2LRXQoYsorIH8maClebsnzTcve+7U3rQUSnC11X4jtPnFuyatqFLvMxZ8MLG8dB4zfHsbPfuvxluONw==}
@@ -1299,6 +1312,23 @@ packages:
       magic-string: 0.26.2
       unimport: 0.6.4_vite@3.0.4
       unplugin: 0.8.0_vite@3.0.4
+    transitivePeerDependencies:
+      - esbuild
+      - rollup
+      - vite
+      - webpack
+    dev: true
+
+  /unplugin-vue-define-options/0.7.1_vite@3.0.4+vue@3.2.37:
+    resolution: {integrity: sha512-nCizpKHSdVgZ8YIuenMNE1D7p2xG7Gkk102bd9bPK0QSzHCEBfeeiDNxYDaJD9iJDmptfmauvl+hxx6wv0IPAA==}
+    engines: {node: '>=14.19.0'}
+    peerDependencies:
+      vue: ^3.2.25
+    dependencies:
+      '@rollup/pluginutils': 4.2.1
+      '@vue/compiler-sfc': 3.2.37
+      unplugin: 0.8.0_vite@3.0.4
+      vue: 3.2.37
     transitivePeerDependencies:
       - esbuild
       - rollup

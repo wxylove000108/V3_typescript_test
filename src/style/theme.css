@@ -1,0 +1,13 @@
+/*默认主题*/
+:root[theme='light'] {
+    --color-body-bg:#fff;
+    --color-navbar-bg: hsla(0,0%,100%,0.86);
+}
+
+
+/*暗色模式*/
+:root[theme='dark'] {
+    --color-body-bg:#222;
+    --color-navbar-bg: rgba(34,34,34,0.86);
+}
+
