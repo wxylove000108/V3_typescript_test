@@ -4,7 +4,7 @@
       <!--导航按钮-->
       <div class="nav-btn flex flex-1 items-center">
         <template v-for="item of navBtnList" :key="item.id">
-          <div class="left-nav hover:bg-gray-100 rounded-md flex justify-center items-center w-10 h-10"
+          <div class="left-nav hover:bg-gray-100 cursor-pointer rounded-md flex justify-center items-center w-10 h-10"
                :class="item.icon === Right? 'ml-10' : '' ">
             <Icon :icon-name="item.icon" theme="multi-color" size="28" :fill="['#333' ,'#66798b' ,'#FFF' ,'#43CCF8']" />
           </div>
