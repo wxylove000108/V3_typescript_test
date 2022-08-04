@@ -39,13 +39,14 @@
         </div>
 
         <!--    头像    -->
-        <div class="avatar mt-1">
-          <Icon class="ml-6" :icon-name="Me" theme="outline" size="25" fill="#333" :strokeWidth="3"/>
+        <div class="avatar mt-1 cursor-pointer">
+          <Icon class="ml-6" :icon-name="Me" theme="outline" size="25" fill="#9CA3AF" :strokeWidth="3"/>
         </div>
       </div>
     </Headers>
 
     <Mains class="pt-15 pr-15 pl-15 pb-8">
+      <router-view/>
       <Footers></Footers>
     </Mains>
   </div>
