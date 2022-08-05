@@ -21,9 +21,10 @@ export function useInputChange() {
 
 export function useMenu() {
   const activeMenuItem = ref<number>(1)
-
-  const changeMenu = (id: number) => {
+  const router = useRouter()
+  const changeMenu = (id: number,path:string) => {
     activeMenuItem.value = id
+    router.push(path)
   }
 
   return {
